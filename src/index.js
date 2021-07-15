@@ -1,17 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+import React from 'react'; // import the React library
+import ReactDOM from 'react-dom'; // import the ReactDOM library
+// we can create a simple element to display on our HTML page
+// const App = React.createElement("h1", null, "Hello World");
+ 
+// with JSX we can perform the same React.createElement() call with the following:
+const App = <h1>Hello World</h1>;
+ 
+// and load our App into the DOM, targeting the div located in /public/index.html
+ReactDOM.render(App, document.getElementById('root'));
